@@ -14,9 +14,32 @@
     <nav>
     </nav>
 
-    <section><h3></h3><article><p>Description of Assignment</p></article></section>
-
-    <aside><p></p></aside>
+    <section>
+  <article> Description of Assignment
+    <ul>
+      <li> Problem:Input a speed and calculate the Demerit DemeritPoints
+      <li>Note: Speed limit is 70 km per hour
+      <li>Note: For every 5 km/h above the speed limit, add one more demerit point
+      <li>Note: At any speed limit, 12 demerit points means license suspended
+      <li> Test cases:
+        <ul>
+          <li>68 km/h 0 points
+          <li>70 km/h 0 points
+          <li>71 km/h 0 points
+          <li>74 km/h 0 points
+          <li>75 km/h 1 points
+          <li>85 km/h 3 points
+          <li>102 km/h 6 points (round down)
+          <li>115 km/h 9 points
+          <li>130 km/h license is suspended
+        </ul>
+      <li> Coding hints
+        <ul>
+          <li> Math.floor(): function to remove any decimal points, no rounding
+        </ul>
+    </ul>
+  </article>
+</section>
     <section>
 
       <form action="x.html" method="post" onsubmit="event.preventDefault">
@@ -88,7 +111,7 @@
       <article></article>
     </section>
 
-    <script src="../scripts/Landscape or Portrait.js"></script>
+    <script src="../scripts/DemeritPoints.js"></script>
 
   </body>
 
