@@ -14,7 +14,24 @@
     <nav>
     </nav>
 
-    <section><h3></h3><article><p>Description of Assignment</p></article></section>
+    <section>
+       <article> Description of Assignment
+         <ul>
+           <li> Problem: calculate up to 5 test scores into a letter value
+           <li> Test cases:
+             <ul>
+               <li> F: 1 - 59%
+               <li> D: 60 - 69%
+               <li> C: 70 - 79%
+               <li> B: 80 - 89%
+               <li> A: 90 - 100%
+             </ul>
+           <li> Note: zero% is not allowed
+           <li> Note: calcualting (mean) means adding 5 scores and dividing by the number of scores
+           <li> note: able to have less than 5 test scores and mean should still work
+         </ul>
+       </article>
+     </section>
 
     <aside><p></p></aside>
     <section>
@@ -26,69 +43,41 @@
       <p>&nbsp;</p>
 
       <p>
-        <label for="textfield">Number1</label>
-        <input type="text" name="textfield1" id="texfield1">
+        <label for="textfield">Number 1</label>
+        <input type="text" name="textfield1" id="textfield1">
+        <a id="validityTest1">See the alert</a>
       </p>
       <p>
-        <label for="textfield">Number2</label>
-        <input type="text" name="textfield2" id="texfield2">
+        <label for="textfield">Number 2</label>
+        <input type="text" name="textfield2" id="textfield2">
+        <a id="validityTest2">See the alert</a>
       </p>
       <p>
-        <label for="tArea">Text Box</label>
-        <textarea type="tArea" cols="20" rows="4" id="password"></textarea>
+        <label for="textfield">Number 3</label>
+        <input type="text" name="textfield3" id="textfield3">
+        <a id="validityTest3">See the alert</a>
       </p>
-      <p>&nbsp;</p>
-
-      <fieldset>
-        <legend>Case studies</legend>
-        <div> Test Cases
-          <ul>
-            <li>
-          </ul>
-        </div>
-        <label>
-          <input type="radio" name="RadioGroup1" value="radio1" id="RadioGroup1_0"> Radio 1
-        </label>
-        <br>
-        <label>
-          <input type="radio" name="RadioGroup2" value="radio2" id="RadioGroup1_1"> Radio 2
-        </label>
-        <br>
-        <label>
-          <input type="radio" name="RadioGroup3" value="radio3" id="RadioGroup1_2"> Radio 3
-        </label>
-        <br>
-      </fieldset>
-      <p>&nbsp;</p>
-      <fieldset>
-        <legend>Case studies</legend>
-        <div> Test Cases
-          <ul>
-            <li>
-          </ul>
-        </div>
-        <label>
-          <input type="checkbox" name="Checkbox1" value="checkbox1" id="CheckboxGroup1_0"> Checkbox 1
-        </label>
-        <br>
-        <label>
-          <input type="checkbox" name="CheckboxGroup2" value="checkbox2" id="CheckboxGroup1_1"> Checkbox 2
-        </label>
-        <br>
-        <label>
-          <input type="checkbox" name="CheckboxGroup3" value="checkbox3" id="CheckboxGroup1_2"> Checkbox 3
-        </label>
-      </fieldset>
+      <p>
+        <label for="textfield">Number 4</label>
+        <input type="text" name="textfield4" id="textfield4">
+        <a id="validityTest4">See the alert</a>
+      </p>
+      <p>
+        <label for="textfield">Number 5</label>
+        <input type="text" name="textfield5" id="textfield5">
+        <a id="validityTest5">See the alert</a>
+      </p>
+      <p>&nbsp</p>
       <br><br>
-      <button type="button" onclick="main">Submit</button>
+      <button type="button" onclick="main()">Submit</button>
       <br>
-      <h3>The awnser is:
-        <a id>What is the Awnser?!</a>
+      <h3>The answer is:
+        <a id="answer">What is the Answer?!!!</a>
       </h3>
       <article></article>
     </section>
 
-    <script src="../scripts/Landscape or Portrait.js"></script>
+    <script src="../scripts/OrderingGrades.js"></script>
 
   </body>
 
