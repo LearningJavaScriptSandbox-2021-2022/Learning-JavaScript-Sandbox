@@ -41,10 +41,6 @@ function firstPart (firstNumber, secondNumber, thirdNumber, fourthNumber, fifthN
 
 }
 
-function secodPart (firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber) {
-  var partTwo = firstPart / 5;
-
-}
 
 function testNaN(number) {
   if (isNaN (number) ) {
@@ -55,6 +51,8 @@ function testNaN(number) {
   }
 }
 
-function Solution (firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber, partTwo) {
+function Solution (firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber) {
+  var partTwo = firstPart / 5;
   return partTwo
+
 }
