@@ -11,11 +11,11 @@ function javascript () {
 function main() {
   let firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber;
 
-  firstNumber = document.getElementById("textfield1").value;
-  secondNumber = document.getElementById("textfield2").value;
-  thirdNumber = document.getElementById("textfield3").value;
-  fourthNumber = document.getElementById("textfield4").value;
-  fifthNumber = document.getElementById("textfield5").value;
+  firstNumber = Number(document.getElementById("textfield1").value);
+  secondNumber = Number(document.getElementById("textfield2").value);
+  thirdNumber = Number(document.getElementById("textfield3").value);
+  fourthNumber = Number(document.getElementById("textfield4").value);
+  fifthNumber = Number(document.getElementById("textfield5").value);
 
 
   document.getElementById("validityTest1").innerHTML = alert (testNaN (firstNumber) );
@@ -36,11 +36,6 @@ function main() {
 
     }
 }
-function firstPart (firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber) {
-  var partOne = firstNumber + secondNumber + thirdNumber + fourthNumber + fifthNumber;
-
-}
-
 
 function testNaN(number) {
   if (isNaN (number) ) {
@@ -52,7 +47,7 @@ function testNaN(number) {
 }
 
 function Solution (firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber) {
-  var partTwo = firstPart / 5;
-  return partTwo
+   var math = firstNumber + secondNumber + thirdNumber + fourthNumber + fifthNumber
+   return math/5
 
 }
