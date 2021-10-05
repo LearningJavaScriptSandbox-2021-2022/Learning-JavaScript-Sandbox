@@ -1,36 +1,20 @@
 console.log('You made it to the FizzBuzz.js!');
 
-
-let stop = false;
-
-function javascript () {
-
-}
-
-
 function main() {
-  let firstNumber;
+  let number;
 
-  firstNumber = Number(document.getElementById("textfield1").value);
-
-  document.getElementById("validityTest1").innerHTML = alert (testNaN (firstNumber) );
-  document.getElementById("validityTest1").innerHTML = testNaN (firstNumber);
-  if (stop == true) {
-      document.getElementById("answer").innerHTML = "Try Again!"
-    } else {
-
-      document.getElementById("answer").innerHTML = Solution (firstNumber);
-
-    }
+   number = Number(document.getElementById("textfield1").value);
+   document.getElementById("answer").innerHTML = fizzorbuzz (number);
 }
 
-function testNaN(number) {
-  if (isNaN (number) ) {
-    stop = true;
-    return "Type a Real Number"
-  } else {
-    return "input validated"
+function fizzorbuzz (number) {
+  if (number % 3 == 0) {
+    if (number % 5 == 0) {
+      return "fizzbuzz"
+    }else {
+      return "fizz"
+    }
+  }else if (number % 5 == 0) {
+    return "buzz"
   }
-function Solution(firstNumber){
-  if (firstNumber/3)
 }
