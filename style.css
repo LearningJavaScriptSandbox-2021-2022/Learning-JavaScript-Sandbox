@@ -1,8 +1,10 @@
-h1 {
+.title {
   background-color: #F1F1F1;
   text-align: center;
   padding: 20px;
   font: 32px calibri;
+  border: solid;
+  border-color: #8c8c8c;
 }
 ol {
   text-align: center;
@@ -13,18 +15,50 @@ ol {
   background-color: #f1f1f1;
 }
 
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
 
-li a:hover {
-  background-color: #555;
-  color: white;
-}
 
 footer {
   font: 10px calibri;
+}
+
+button {
+  display: inline-block;
+  width: 200px;
+  font: 16px calibri;
+  padding: 0;
+  height: 50px;
+  border: none;
+}
+button a {
+  display: inline-block;
+}
+button:hover {
+  background-color: #555;
+  color: white;
+}
+.desc {
+  font: 16px calibri;
+  background-color: #F1F1F1;
+  width: 530px;
+  padding: 20px;
+  border: solid;
+  border-color: #8c8c8c;
+}
+.submit {
+  border-radius: 12px;
+  background-color: #F1F1F1;
+  border: solid;
+  border-color: #8c8c8c;
+}
+
+.inputs {
+  font: 16px calibri;
+  background-color: #F1F1F1;
+  width: 530px;
+  padding: 20px;
+  border: solid;
+  border-color: #8c8c8c;
+}
+h3 {
+  font: 25px calibri;
 }

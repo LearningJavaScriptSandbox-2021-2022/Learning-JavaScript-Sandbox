@@ -9,13 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header><h1>Ordering grades</h1></header>
+    <header><h1 class="title">Ordering grades</h1></header>
 
-    <nav>
-    </nav>
-
-    <section>
-       <article> Description of Assignment
+    <section class="desc">
+       <p> Description of Assignment </p>
          <ul>
            <li> Problem: calculate up to 5 test scores into a letter value
            <li> Test cases:
@@ -30,17 +27,11 @@
            <li> Note: calcualting (mean) means adding 5 scores and dividing by the number of scores
            <li> note: able to have less than 5 test scores and mean should still work
          </ul>
-       </article>
      </section>
 
-    <aside><p></p></aside>
     <section>
-
-      <form action="x.html" method="post" onsubmit="event.preventDefault">
-
-      </form>
-
       <p>&nbsp;</p>
+    <section class="inputs">
 
       <p>
         <label for="textfield">Number 1</label>
@@ -67,17 +58,20 @@
         <input type="text" name="textfield5" id="textfield5">
         <a id="validityTest5">See the alert</a>
       </p>
-      <p>&nbsp</p>
-      <br><br>
-      <button type="button" onclick="main()">Submit</button>
+    </section>
+      <p>&nbsp;</p>
+      <button class="submit" type="button" onclick="main()">Submit</button>
       <br>
-      <h3>The answer is:
-        <a id="answer">What is the Answer?!!!</a>
+      <h3>Your Grade is:
+        <a id="answer"></a>
       </h3>
-      <article></article>
     </section>
 
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
     <script src="../scripts/OrderingGrades.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css">
 
   </body>
 

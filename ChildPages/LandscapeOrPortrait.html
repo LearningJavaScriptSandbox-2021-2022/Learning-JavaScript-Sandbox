@@ -11,9 +11,9 @@
   </head>
 
   <body>
-    <header><h1>Landscape or Portrait Assignment</h1></header>
+    <header><h1 class="title">Landscape or Portrait Assignment</h1></header>
 
-      <section>
+      <section class = "desc">
         <article> Description of Assignment
           <ul>
             <li> Problem: Calculate if geometry example is landscape or portrait
@@ -31,8 +31,9 @@
           </ul>
         </article>
       </section>
-
+      <p>&nbsp;</p>
       <section>
+      <section class="inputs">
         <p>
           <label for="textfield">Height</label>
           <input type="text" name="textField1" id="textField1">
@@ -43,16 +44,20 @@
           <input type="text" name="textField2" id="textField2">
           <a id="validityTest2">Look at the alert</a>
         </p>
+        </section>
         <p>&nbsp;</p>
-        <button type="button" onclick="main()">Get answer</button>
+        <button class="submit" type="button" onclick="main()">Get answer</button>
         <br>
         <h3>Your device is in:
           <a id="answer"></a>
         </h3>
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
       </section>
 
     <script src="../scripts/LandscapeOrPortrait.js"></script>
-    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
 
   </body>
 

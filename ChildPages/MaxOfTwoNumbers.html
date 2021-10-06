@@ -9,13 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header><h1>Max of two numbers</h1></header>
+    <header><h1 class="title">Max of two numbers</h1></header>
 
-    <nav>
-    </nav>
-
-    <section>
-      <article>Description of Assignment
+    <section class = "desc">
+      <p>Description of Assignment</p>
         <ul>
           <li>Problem: write a function that takes two numbers and returns the maximum of the two</li>
           <li>Three test cases exist:</li>
@@ -29,17 +26,12 @@
             <li> Examples: larger, smaller, equal
           </ul>
         </ul>
-      </article>
     </section>
-
     <section>
-
-      <form action="x.html" method="post" onsubmit="event.preventDefault">
-
-      </form>
 
       <p>&nbsp;</p>
 
+    <section class="inputs">
       <p>
         <label for="textfield">Number1</label>
         <input type="text" name="textField1" id="textField1">
@@ -50,21 +42,21 @@
         <input type="text" name="textField2" id="textField2">
         <a id="validityTest2">See the alert</a>
       </p>
-      <p>
-        <label for="tArea">Text Box</label>
-        <textarea type="tArea" cols="20" rows="4" id="password"></textarea>
-      </p>
+    </section>
       <p>&nbsp;</p>
       <br><br>
-      <button type="button" onclick="main()">Submit</button>
+      <button class="submit"type="button" onclick="main()">Submit</button>
       <br>
-      <h3>The answer is:
-        <a id="answer">What is the Answer?!!!</a>
+      <h3>The bigger Number is:
+        <a id="answer"></a>
       </h3>
-      <article></article>
     </section>
 
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
     <script src="../scripts/MaxOfTwoNumbers.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css">
 
   </body>
 
