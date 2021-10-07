@@ -3,26 +3,20 @@ console.log('You made it to the Demerit points.js!');
 
 let stop = false;
 
-function javascript () {
-
-}
-
 
 function main() {
-  let firstNumber, secondNumber;
+  let limit, yourspeed;
 
-  firstNumber = Number(document.getElementById("textfield1").value);
-  secondNumber = Number(document.getElementById("textfield2").value);
+  limit = Number(document.getElementById("textfield1").value);
+  yourspeed = Number(document.getElementById("textfield2").value);
 
-  document.getElementById("validityTest1").innerHTML = alert (testNaN (firstNumber) );
-  document.getElementById("validityTest1").innerHTML = testNaN (firstNumber);
-  document.getElementById("validityTest2").innerHTML = alert (testNaN (secondNumber) );
-  document.getElementById("validityTest2").innerHTML = testNaN (secondNumber);
+  document.getElementById("validityTest1").innerHTML = testNaN (limit);
+  document.getElementById("validityTest2").innerHTML = testNaN (yourspeed);
   if (stop == true) {
       document.getElementById("answer").innerHTML = "Try Again!"
     } else {
 
-      document.getElementById("answer").innerHTML = Solution (firstNumber, secondNumber);
+      document.getElementById("answer").innerHTML = Solution (limit, yourspeed);
 
     }
 }
@@ -30,20 +24,19 @@ function main() {
 function testNaN(number) {
   if (isNaN (number) ) {
     stop = true;
-    return "Type a Real Number"
+    return "Please Input a Number"
   } else {
-    return "input validated"
+    return ":)"
   }
 }
 
-function Solution(firstNumber, secondNumber) {
-  var speed = secondNumber - firstNumber
-  if (speed >= 60) {
-    return "bad"
-  }else if (speed < 0){
-    return "no"
-  } else {
-    var speedTwo = Math.floor(speed/5)
-    return speedTwo
+function Solution(limit, yourspeed) {
+  var speed = (yourspeed - limit) / 5
+  if (speed >= 12) {
+    return speed + ": License suspended"
+  } else if (speed >= 0) {
+    return speed
+  } else if (speed < 0) {
+    return "Zero Points, Below Limit"
   }
 }

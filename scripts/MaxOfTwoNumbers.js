@@ -3,9 +3,6 @@ console.log('You made it to the Max of two numbers.js!');
 
 let stop = false;
 
-function javascript () {
-
-}
 
 
 function main() {
@@ -14,10 +11,7 @@ function main() {
   firstNumber = document.getElementById("textField1").value;
   secondNumber = document.getElementById("textField2").value;
 
-
-  document.getElementById("validityTest1").innerHTML = alert (testNaN (firstNumber) );
   document.getElementById("validityTest1").innerHTML = testNaN (firstNumber);
-  document.getElementById("validityTest2").innerHTML = alert (testNaN (secondNumber) );
   document.getElementById("validityTest2").innerHTML = testNaN (secondNumber);
   if (stop == true) {
       document.getElementById("answer").innerHTML = "Try Again!"
@@ -31,9 +25,9 @@ function main() {
 function testNaN(number) {
   if (isNaN (number) ) {
     stop = true;
-    return "Type a Real Number"
+    return "Please Input a Number"
   } else {
-    return "input validated"
+    return ":)"
   }
 }
 

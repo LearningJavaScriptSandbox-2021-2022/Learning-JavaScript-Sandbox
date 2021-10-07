@@ -32,8 +32,8 @@ function Solution (firstNumber, secondNumber) {
 function testNAN (number) {
   if ( isNaN (number)) {
     stop = true;
-    return "Type a Real Number!"
+    return "Please Input a Number"
   } else {
-    return "Input Validated"
+    return ":)"
   }
 }
