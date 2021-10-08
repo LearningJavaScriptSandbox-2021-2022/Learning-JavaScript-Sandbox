@@ -28,6 +28,7 @@ button {
   padding: 0;
   height: 50px;
   border: none;
+  background-color: grey;
 }
 button a {
   display: inline-block;
@@ -63,4 +64,7 @@ button:hover {
 }
 h3 {
   font: 25px calibri;
+}
+body {
+  background-image: linear-gradient(fuchsia, goldenrod);
 }
