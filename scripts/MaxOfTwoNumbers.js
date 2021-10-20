@@ -33,8 +33,8 @@ function testNaN(number) {
 
 function Solution (firstNumber, secondNumber) {
   if (firstNumber > secondNumber) {
-    return "The first number"
-  } else {
-    return "The second number"
+    return "First Number"
+  }else if (firstNumber < secondNumber) {
+    return "Second number"
   }
 }
