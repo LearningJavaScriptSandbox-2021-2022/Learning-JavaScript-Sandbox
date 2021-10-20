@@ -28,7 +28,7 @@ button {
   padding: 0;
   height: 50px;
   border: none;
-  background-color: grey;
+  background-color: lightskyblue;
 }
 button a {
   display: inline-block;
@@ -66,5 +66,5 @@ h3 {
   font: 25px calibri;
 }
 body {
-  background-image: linear-gradient(fuchsia, goldenrod);
+  background-color: lightsteelblue;
 }
