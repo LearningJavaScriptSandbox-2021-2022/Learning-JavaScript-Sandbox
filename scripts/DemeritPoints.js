@@ -33,9 +33,9 @@ function testNaN(number) {
 function Solution(limit, yourspeed) {
   var speed = (yourspeed - limit) / 5
   if (speed >= 12) {
-    return speed + ": License suspended"
+    return Math.floor(speed) + ": License suspended"
   } else if (speed >= 0) {
-    return speed
+    return Math.floor(speed)
   } else if (speed < 0) {
     return "Zero Points, Below Limit"
   }
